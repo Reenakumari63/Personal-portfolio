@@ -1,0 +1,172 @@
+*
+{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+   background: linear-gradient(135deg ,#00bbffe0,#0087ff);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.container
+{
+    margin-top: 10px;
+    width: 98%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    
+}
+
+header h1
+{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section
+{
+     margin-bottom: 20px;
+}
+section h2
+{
+    font-size: 1.5rem;
+    color: blue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+section p,ul
+{
+     font-size: 1rem;
+     color: #555;
+     line-height: 1.5;
+}
+ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+li
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: black;
+    transition: background-color 0.3 ease;
+    
+}
+ul li ,i
+{
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#h
+{
+    margin-right: 15px;
+
+}
+a
+{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: transform 0.5 ease , color 1s ease;
+   
+}
+ul li:hover
+{
+    background-color: #e0e0e0;
+}
+
+a:hover
+{
+    transform: scale(1.25);
+    color: #0073b1;;
+    
+}
+a:active 
+{
+  color: #005582;
+}
+
+
+button
+{
+    background: linear-gradient(135deg , #00bdff, #0087ff);
+    color: white;
+    font-size: 1rem;
+    padding:5px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor:pointer;
+    transition: transform 0.5s ease,background 1s ease;
+}
+button:hover
+{
+    transform: scale(1.2); 
+    background: linear-gradient(135deg,#0087ff,#00bdff);
+
+}
+
+#fact
+{
+    margin-top: 15px;
+    font-style: bold;
+    color: darkorchid;
+}
+
+#profile-pic
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#profile-pic img
+{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    transition: transform 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#profile-pic img:hover
+{
+    transform: scale(1.2);
+}
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to
+    {
+        opicity:1;
+        transform: translateY(0);
+    }
+}
